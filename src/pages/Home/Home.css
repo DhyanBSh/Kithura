@@ -1,0 +1,390 @@
+.home-page {
+  background-image: url('/assets/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  min-width: 100vw;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 1.2fr;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 2rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Hero Left Section */
+.hero-left {
+  padding-right: 10px;
+  min-width: 0;
+}
+
+.hurry {
+  font-size: 4rem;
+  font-family: 'Tac One', sans-serif;
+  font-weight: bold;
+  color: #783D2E;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  font-family: 'poppins', sans-serif;
+  line-height: 1.6;
+  color: #00000071;
+  margin-bottom: 30px;
+}
+
+.hero-text strong {
+    font-weight: bold;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons img {
+  width: 48px;
+  height: 48px;
+}
+
+/* Hero Center Section */
+.hero-center {
+  background-color: #ff8000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  width: 130%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.logo-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 0px;
+  margin-top: 65px;
+  height: 100px;
+}
+
+.logo-rectangle {
+  width: 200px;     
+  height: 70px;           
+  background-color: #5E2515; 
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;        
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+
+.hero-image {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  margin-bottom: 120px;
+  display: block;
+  object-fit: contain;
+}
+
+/* Hero Right Section */
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  height: 100%;
+  min-width: 0;
+}
+
+.palm {
+  position: absolute;
+  right: -150px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.countdown {
+  position: absolute;
+  bottom: 50px;
+  left: 35%;
+  z-index: 10;
+}
+
+/* ------------------ Large screens ------------------ */
+@media screen and (min-width: 1440px) {
+  .hero {
+    max-width: 1400px;
+    gap: 3rem;
+  }
+  .hero-image {
+    max-width: 600px;
+  }
+  .logo-rectangle {
+    width: 260px;
+    height: 90px;
+  }
+}
+
+/* ------------------ Tablet ------------------ */
+@media screen and (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    row-gap: 40px;
+    max-width: 98vw;
+    padding: 0 1rem;
+  }
+
+  .hero-left,
+  .hero-center,
+  .hero-right {
+    padding: 0;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-center {
+    width: 100%;
+    height: 100vm;
+    margin-bottom: 40px;
+    min-width: 0;
+  }
+
+  .hero-image {
+    max-width: 350px;
+    margin-bottom: 60px;
+  }
+
+  .hero-right {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-width: 0;
+  }
+
+  .palm {
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 80%;
+    margin-top: 10px;
+    max-width: 60vw;
+  }
+
+  .countdown {
+    position: static;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .hero {
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    row-gap: 20px;
+    max-width: 98vw;
+    padding: 0 1rem;
+  }
+
+  .hero-left,
+  .hero-center,
+  .hero-right {
+    padding: 0;
+    width:100%;
+    min-width: 0;
+  }
+
+  .hero-center {
+    width: 100%;
+    height: 100vm;
+    margin-bottom: 40px;
+    min-width: 0;
+  }
+
+  .hero-image {
+    max-width: 350px;
+    margin-bottom: 60px;
+  }
+
+  .hero-right {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-width: 0;
+  }
+
+  .palm {
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 80%;
+    margin-top: 10px;
+    max-width: 60vw;
+  }
+
+  .countdown {
+    position: static;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home-page {
+    padding: 0 0.5rem;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+    max-width: 100vw;
+    padding: 0;
+  }
+  .hero-left {
+    margin-left: 0;
+    padding-right: 0;
+    text-align: center;
+    align-items: center;
+  }
+  .hurry {
+    margin-top: 30px;
+    font-size: 2.2rem;
+  }
+  .hero-text {
+    left: 50%; 
+    font-size: 0.98rem;
+    line-height: 1.4;
+    padding-left: 100px;
+    max-width: 80%;
+  }
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+  .hero-center {
+    width: 100%;
+    height: 80%;
+    padding: 16px 0;
+    margin-bottom: 20px;
+    min-width: 0;
+  }
+  .logo-rectangle {
+    margin-top: 0px;
+    width: 200px;
+    height: 70px;
+    border-radius: 15px;
+  }
+  .logo img {
+    width: 80px;
+  }
+  .hero-image {
+    max-width: 500px;
+    margin-bottom: 30px;
+  }
+  .hero-right {
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+  }
+  .palm {
+    max-height: 80%;
+    margin-top: 10px;
+    max-width: 100vw;
+  }
+  .countdown {
+    margin-bottom: 120px;
+  }
+}
+
+/* ------------------ Mobile ------------------ */
+@media screen and (max-width: 600px) {
+  .home-page {
+    padding: 0 0.5rem;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+    max-width: 100vw;
+    padding: 0;
+  }
+  .hero-left {
+    left: 50%; 
+    margin-left: 0;
+    padding-right: 0;
+    text-align: center;
+    align-items: center;
+  }
+  .hurry {
+    left: 50%; 
+    margin-top: 30px;
+    font-size: 2.2rem;
+  }
+  .hero-text {
+    left: 50%; 
+    font-size: 0.98rem;
+    line-height: 1.4;
+    padding-left: 50px;
+    max-width: 80%;
+  }
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+  .hero-center {
+    width: 100%;
+    height: 80%;
+    padding: 16px 0;
+    margin-bottom: 20px;
+    min-width: 0;
+  }
+  .logo-rectangle {
+    margin-top: 0px;
+    width: 200px;
+    height: 70px;
+    border-radius: 15px;
+  }
+  .logo img {
+    width: 80px;
+  }
+  .hero-image {
+    max-width: 500px;
+    margin-bottom: 30px;
+  }
+  .hero-right {
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+  }
+  .palm {
+    max-height: 80%;
+    margin-top: 10px;
+    max-width: 100vw;
+  }
+  .countdown {
+    margin-bottom: 120px;
+  }
+}

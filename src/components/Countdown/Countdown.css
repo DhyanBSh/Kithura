@@ -1,0 +1,69 @@
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8ce;
+  border-radius: 15px;
+  padding: 10px 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.count-label {
+  display: flex;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.count-values {
+  display: flex;
+  gap: 10px;
+}
+
+.count-item {
+  display: flex;
+  align-items: baseline;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #555;
+}
+
+.count-item b {
+  display: flex;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #ff8c00;
+  margin-right: 3px;
+}
+
+/* ------------------ Mobile Responsive ------------------ */
+@media screen and (max-width: 480px) {
+  .countdown {
+    padding: 8px 12px;           /* slightly smaller padding */
+  }
+
+  .count-label {
+    font-size: 0.9rem;           /* smaller label text */
+    margin-bottom: 6px;
+  }
+
+  .count-values {
+    gap: 6px;                     /* smaller gap on mobile */
+    flex-wrap: wrap;              /* allow numbers to wrap if needed */
+    justify-content: center;
+  }
+
+  .count-item {
+    font-size: 1.5rem;            /* scale down numbers */
+  }
+
+  .count-item b {
+    font-size: 2rem;              /* scale down bold numbers */
+    margin-right: 2px;
+  }
+}

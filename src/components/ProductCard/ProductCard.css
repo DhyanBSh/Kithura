@@ -1,0 +1,162 @@
+.product-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 6px;
+}
+
+.product-img img {
+  width: 100%;
+  height: auto;
+}
+
+.product-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.product-title {
+  font-size: 1.3rem; 
+  font-weight: bold;
+  color: #333;
+  margin: 6px 0 5px 0;
+}
+
+.product-size {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.product-desc {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.3;
+  margin-bottom: 10px; 
+}
+
+.product-price {
+  font-size: 1.2rem; /* reduced from 1.5rem */
+  font-weight: bold;
+  color: #5E2515;
+  margin: 6px 0;
+}
+
+.p-btn-buy {
+  background-color: #ff8c00;
+  color: #ffffff;
+  font-size: 1rem; 
+  font-weight: bold;
+  padding: 8px 40%; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 6px;
+}
+
+.p-btn-buy:hover {
+  background-color: #e27100;
+}
+
+.product-available {
+  font-size: 0.8rem; /* reduced */
+  color: #999;
+  margin-top: 10px;
+}
+
+/* ------------------ Mobile Responsive ------------------ */
+@media screen and (max-width: 480px) {
+  .product-card {
+    padding: 8px;
+    max-width: 90%;        /* shrink cards on small screens */
+  }
+
+  .product-img {
+    max-width: 180px;      /* smaller images */
+    margin-bottom: 5px;
+  }
+
+  .product-title {
+    font-size: 1.1rem;     /* smaller title */
+    margin: 5px 0 4px 0;
+  }
+
+  .product-size {
+    font-size: 0.9rem;     /* smaller size text */
+    margin-bottom: 5px;
+  }
+
+  .product-desc {
+    font-size: 0.85rem;    /* smaller description */
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .product-price {
+    font-size: 1rem;       /* smaller price */
+    margin: 5px 0;
+  }
+
+  .p-btn-buy {
+    font-size: 0.9rem;     /* smaller button text */
+    padding: 6px 35%;      /* reduce button width */
+    margin-top: 5px;
+  }
+
+  .product-available {
+    font-size: 0.7rem;     /* smaller availability text */
+  }
+}
+
+/* ------------------ Tablet Responsive ------------------ */
+@media screen and (max-width: 768px) {
+  .product-card {
+    max-width: 200px;       /* slightly smaller than desktop */
+    padding: 9px;
+  }
+
+  .product-img {
+    max-width: 200px;
+  }
+
+  .product-title {
+    font-size: 1.2rem;
+  }
+
+  .product-size {
+    font-size: 0.95rem;
+  }
+
+  .product-desc {
+    font-size: 0.9rem;
+    line-height: 1.25;
+  }
+
+  .product-price {
+    font-size: 1.1rem;
+  }
+
+  .p-btn-buy {
+    font-size: 0.95rem;
+    padding: 7px 38%;
+  }
+
+  .product-available {
+    font-size: 0.75rem;
+  }
+}
